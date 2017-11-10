@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <CheckBox
+        android:id="@+id/thief"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="147dp"
+        android:text="Thief" />
+
+    <CheckBox
+        android:id="@+id/cleric"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/thief"
+        android:layout_alignStart="@+id/thief"
+        android:layout_below="@+id/thief"
+        android:layout_marginTop="40dp"
+        android:text="Cleric" />
+
+    <CheckBox
+        android:id="@+id/wizard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cleric"
+        android:layout_marginTop="47dp"
+        android:layout_toEndOf="@+id/textView2"
+        android:layout_toRightOf="@+id/textView2"
+        android:text="Wizard" />
+
+    <CheckBox
+        android:id="@+id/warrior"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/wizard"
+        android:layout_alignRight="@+id/wizard"
+        android:layout_below="@+id/wizard"
+        android:layout_marginTop="48dp"
+        android:text="Warrior" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/cleric"
+        android:layout_marginBottom="82dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginRight="31dp"
+        android:layout_toLeftOf="@+id/thief"
+        android:layout_toStartOf="@+id/thief"
+        android:text="Classes" />
+
+    <Button
+        android:id="@+id/classOk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/warrior"
+        android:layout_marginEnd="73dp"
+        android:layout_marginRight="73dp"
+        android:layout_marginTop="35dp"
+        android:text="Ok" />
+</RelativeLayout>
